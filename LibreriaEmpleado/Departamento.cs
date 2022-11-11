@@ -13,6 +13,8 @@ namespace LibreriaEmpleado
     {
         [Key]
         public int IdDepartamento { get; set; }
+        [ForeignKey("IdEmpleado")]
+        public int IdEmpleado { get; set; }
         public string Nombre { get; set; }
         public List<Empleado> Empleados { get; set; }
         public Departamento() { }

@@ -21,5 +21,8 @@ namespace LibreriaEmpleado
             IdEmpleado= id;
             Legajo= legajo;
         }
+
+        public Departamento Departamento { get; set; }
+
     }
 }

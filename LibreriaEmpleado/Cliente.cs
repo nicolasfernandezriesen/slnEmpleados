@@ -8,10 +8,8 @@ using System.Threading.Tasks;
 
 namespace LibreriaEmpleado
 {
-    [Table("Cliente")]
     public class Cliente : Persona
     {
-        [Key]
         public int IdCliente { get; set; }
         public string Cuit { get; set; }
         public string Telefono { get; set; }
