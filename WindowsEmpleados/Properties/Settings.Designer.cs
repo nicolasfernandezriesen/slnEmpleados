@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WindowsPresentacion.Properties {
+namespace WindowsEmpleados.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -27,9 +27,9 @@ namespace WindowsPresentacion.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=DBEmpleado;Integrated Security=True")]
-        public string KeyDBEmpleado {
+        public string KeyDBEmpleados {
             get {
-                return ((string)(this["KeyDBEmpleado"]));
+                return ((string)(this["KeyDBEmpleados"]));
             }
         }
     }

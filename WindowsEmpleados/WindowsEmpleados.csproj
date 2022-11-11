@@ -5,10 +5,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{79317A00-435B-4873-8338-710BB32476B9}</ProjectGuid>
+    <ProjectGuid>{F47B018B-F381-4A42-8CFB-E13C5A879478}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WindowsPresentacion</RootNamespace>
-    <AssemblyName>WindowsPresentacion</AssemblyName>
+    <RootNamespace>WindowsEmpleados</RootNamespace>
+    <AssemblyName>WindowsEmpleados</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -56,16 +56,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBEmpleadoContext.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202211112031168_CrearBaseDatos.cs" />
+    <Compile Include="Migrations\202211112031168_CrearBaseDatos.designer.cs">
+      <DependentUpon>202211112031168_CrearBaseDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202211112031168_CrearBaseDatos.resx">
+      <DependentUpon>202211112031168_CrearBaseDatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
